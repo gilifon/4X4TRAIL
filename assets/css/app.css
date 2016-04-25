@@ -1,0 +1,20 @@
+
+#map_display > div{
+	position:relative;
+}
+#map_display > div>span{
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ff9500;
+  
+  background-color: white;
+  border-radius: 7px;
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  font-size:11px;
+  }
+#map_display > div>span >a{
+	color:#ff9500;
+}  
+  
