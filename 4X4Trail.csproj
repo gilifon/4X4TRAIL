@@ -193,6 +193,7 @@
     <Content Include="assets\img\logo2-light.png" />
     <Content Include="assets\img\trail_mark.jpg" />
     <Content Include="assets\img\under_contruction.jpg" />
+    <Content Include="assets\img\trail_view.jpg" />
     <Content Include="assets\js\linq.min.js" />
     <Content Include="assets\js\simpleCart.min.js" />
     <Content Include="assets\plugins\bootstrap-datetimepicler\css\bootstrap-datetimepicker.min.css" />
