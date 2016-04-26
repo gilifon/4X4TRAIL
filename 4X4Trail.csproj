@@ -192,6 +192,7 @@
     <Content Include="assets\img\logo2-default.png" />
     <Content Include="assets\img\logo2-light.png" />
     <Content Include="assets\img\trail_mark.jpg" />
+    <Content Include="assets\img\trail_view2.jpg" />
     <Content Include="assets\img\under_contruction.jpg" />
     <Content Include="assets\img\trail_view.jpg" />
     <Content Include="assets\js\linq.min.js" />
