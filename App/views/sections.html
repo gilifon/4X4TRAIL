@@ -1,5 +1,5 @@
 ﻿<div class="container" style="direction:ltr">
-    <h3>Amature Radio On Israel Trail - 4X4Trail</h3>
+    <h3>Amature Radio On Israel National Trail - 4X4Trail</h3>
 
     <div class="panel-group acc-v1 margin-bottom-40" id="accordion">
         <!--<div class="panel panel-default">
@@ -65,7 +65,48 @@
             <div id="i2" class="panel-collapse collapse">
                 <div class="panel-body">
                     <p>When you hear the special callsign 4X4Trail on the air, it means the operator is activating from one of the 46 Israel National Trail sections. 
-                    Usually the operator will give the section number as a suffix e.g. if an operator is activating from Mount Tabor in section 8 of the trail, he will be calling as 4X4Trail/8</p>
+                    Usually the operator will give the section number as a suffix e.g. if the activation is from "Mount Tabor", which is in 8th section of the trail, he will be calling as 4X4Trail/8</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#i3">
+                        Awards
+                    </a>
+                </h4>
+            </div>
+            <div id="i3" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p>
+                        Radio operators that would work this special callsign, may ask for a nice certificate.<br />
+                        We will issue awards to stations working 10,20,30 and all 46 "Israel National Trail" sections.
+                    </p>
+                    <!--<img src="assets/img/trail_view.jpg" width="100%" />-->
+                    <p>
+                        Enter your callsign to check your eligibility: 
+                    </p>
+                    <p>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                <input class="form-control" data-bind="value: callsign" placeholder="Your Callsign" type="text" tabindex="1" />
+                            </div>
+                            <div class="col-md-2 col-sm-3 col-xs-3">
+                                <button data-bind="click: GetWokedSections" type="button" class="btn btn-info"><span class="glyphicon glyphicon-hdd"></span> Check</button>
+                            </div>
+                        </div>
+                    </p>
+                    <p>
+                        <div id="sectionsPanel" data-bind="foreach: linkList">
+                            <div class="section" data-bind="css: { worked_section: section }, html: section"></div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </p>
+                    <p>
+                        <div data-bind="visible:linkList().length >= 10"><span class="glyphicon glyphicon-ok"></span> Congratulations, you have worked <label data-bind="text:linkList().length"></label> sections and your are eligable for an award!</div>
+                    </p>
                 </div>
             </div>
         </div>
