@@ -5,6 +5,7 @@
     //properties
     this.linkList = ko.observableArray();
     this.callsign = ko.observable('');
+    this.didNotWork = ko.observable(false);
 
     this.GetWokedSections = function () {
         $.ajax({
@@ -13,10 +14,11 @@
             data: { 'info': { 'call': callsign() } }
         }).done(function (data) {
             linkList(data);
-            
+            didNotWork(false);
         }).error(function (xhr, ajaxOptions, thrownError) {
             //alert(jQuery.parseJSON(xhr.responseText).error);
             linkList([]);
+            didNotWork(true);
         });
     }
 

@@ -64,8 +64,8 @@
             </div>
             <div id="i2" class="panel-collapse collapse">
                 <div class="panel-body">
-                    <p>When you hear the special callsign 4X4Trail on the air, it means the operator is activating from one of the 46 Israel National Trail sections. 
-                    Usually the operator will give the section number as a suffix e.g. if the activation is from "Mount Tabor", which is in 8th section of the trail, he will be calling as 4X4Trail/8</p>
+                    <p>When you hear the special callsign 4X4Trail on the air, it means the operator is activating from one of the 46 sections of Israel National Trail. 
+                    Usually the operator will give the section number as a suffix e.g. if the activation is from "Mount Tabor", which is in the 8th section of the trail, he will be calling as 4X4Trail/8</p>
                 </div>
             </div>
         </div>
@@ -106,6 +106,7 @@
                     </p>
                     <p>
                         <div data-bind="visible:linkList().length >= 10"><span class="glyphicon glyphicon-ok"></span> Congratulations, you have worked <label data-bind="text:linkList().length"></label> sections and your are eligable for an award!</div>
+                        <div data-bind="visible:didNotWork"><span class="glyphicon glyphicon-star"></span> You did not work any section yet.. Hope to hear you on the air soon!</div>
                     </p>
                 </div>
             </div>
