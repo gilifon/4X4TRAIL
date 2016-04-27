@@ -440,6 +440,7 @@
     <Content Include="weyland-config.js" />
     <Content Include="Scripts\jquery-2.0.3.min.map" />
     <Content Include="Server\GetWokedSections.php" />
+    <Content Include="Server\GetLog.php" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
