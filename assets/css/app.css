@@ -5,32 +5,41 @@
 #map_display > div>span{
   width: 16px;
   height: 16px;
-  border: 1px solid #ff9500;
-  
+  border: 1px solid #455A17;
   background-color: white;
-  border-radius: 7px;
+  border-radius: 3px;
   position: absolute;
   text-align: center;
   font-weight: bold;
   font-size:11px;
   }
 #map_display > div>span >a{
-	color:#ff9500;
+	color:#305C06;
 }
 .section {
-    color:#ff9500;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #455A17;
     background-color: white;
-    border-radius: 10px;
-    padding: 3px 0 0 7px;
-    width: 20px;
-    height: 20px;
+    border-radius: 6px;
     font-weight: bold;
-    font-size: 11px;
+    font-size: 12px;
     float: left;
     margin: 5px 5px 5px 5px;
+
+    color:#b44b00;
+    padding: 6px 0 0 10px;
 }
 .worked_section {
     color: white;
-    background-color: #ff9500;
+    background-color: #455A17;
+    border-color: white;
+    
 }
-  
+body
+{
+    background-image:url(../img/INT_Marker_icon.png);
+    background-color:rgba(0, 0, 0, 0.5);
+    background-repeat:repeat;
+    
+}

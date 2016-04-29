@@ -1,26 +1,33 @@
-﻿<div class="container" style="direction:ltr">
-    <h3>Amature Radio On Israel National Trail - 4X4Trail</h3>
+﻿<div class="container" >
+    
+    <h3 data-bind="visible:shell.lang() == 'he'">4X4Trail - חובבי רדיו בשביל ישראל</h3>
+    <h3 style="direction:ltr" data-bind="visible:shell.lang() == 'en'">Amature Radio On Israel National Trail - 4X4Trail</h3>
 
     <div class="panel-group acc-v1 margin-bottom-40" id="accordion">
-        <!--<div class="panel panel-default">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#i1">
-                        על השביל..
-                    </a>
-                </h4>
-            </div>
-            <div id="i1" class="panel-collapse collapse">
+        <div class="panel panel-default" data-bind="visible:shell.lang() == 'he'">
+            <div class=" panel-heading">
+            <h4 class="panel-title">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#i0">
+                     שביל ישראל
+                </a>
+            </h4>
+        </div>
+            <div id="i0" class="panel-collapse collapse">
                 <div class="panel-body">
-                    <p>שביל ישראל הוא נתיב הליכה ארוך שנמשך לאורך כל מדינת ישראל, המתחיל בבית אוסישקין שבקיבוץ דן בצפון ומסתיים בבית ספר שדה אילת, על חוף מפרץ אילת. אורכו היום, לאחר השינויים שבוצעו בו במהלך השנים, הוא כ-1,040 קילומטרים. שביל ישראל הוא גולת הכותרת ברשת סימון השבילים הארצית שיזמה ויצרה החברה להגנת הטבע, המסמנת וממפה את כל מסלולי הטיול בארץ, על ידי הוועדה לשבילי ישראל.</p>
-                    <p>השביל נחנך בפסח, אפריל 1995, לאחר כ-16 שנות עבודה ודיונים על התוואי. הרעיון הועלה בראשית שנות השמונים על ידי אברהם תמיר, שהתרשם משביל האפלצ'ים בארצות הברית. את הרעיון העביר תמיר לאורי דביר שתכנן וביצע‏. בתכנונו הושם דגש על מתן ייצוג לכל נופי ואזורי הארץ וכן על מעבר באתרים חשובים לכל הדתות. השביל מהווה מעין שלד לשאר שבילי הטיול בארץ שרבים מהם יוצאים ממנו. בשונה מסימון השבילים הנפוץ בארץ, פס צבעוני בין שני פסים לבנים, מסומן שביל ישראל באמצעות שלושה פסים מקבילים במדורג: לבן, כחול וכתום. הסימון הוא מדורג - כאשר הפס הלבן עליון, כיוון ההליכה צפונה ואילו כאשר הכתום עליון דרומה (יש הסוברים שהלבן מייצג את החרמון המושלג והכתום מייצג את המדבר‏).</p>
-                    <p>שביל ישראל נבחר כאחד מ-20 מסלולי ההליכה הטובים ביותר על ידי נשיונל ג'אוגרפיק, ותואר על ידי צוות השופטים כמשלב טבע, היסטוריה, מורשת ותרבות עם "נופים תנ"כיים בקנה מידה גדול וכן [נופים] מחיי היום-יום של הישראלים המודרניים"‏</p>
-                    <a href="https://he.wikipedia.org/wiki/%D7%A9%D7%91%D7%99%D7%9C_%D7%99%D7%A9%D7%A8%D7%90%D7%9C" target="_blank"> מתוך ויקיפדיה</a>
+                    <div class="col-md-9 col-sm-12 col-xs-12">
+                        <p>שביל ישראל הוא נתיב הליכה ארוך שנמשך לאורך כל מדינת ישראל, המתחיל בבית אוסישקין שבקיבוץ דן בצפון ומסתיים בבית ספר שדה אילת, על חוף מפרץ אילת. אורכו היום, לאחר השינויים שבוצעו בו במהלך השנים, הוא כ-1,040 קילומטרים. שביל ישראל הוא גולת הכותרת ברשת סימון השבילים הארצית שיזמה ויצרה החברה להגנת הטבע, המסמנת וממפה את כל מסלולי הטיול בארץ, על ידי הוועדה לשבילי ישראל.</p>
+                        <p>השביל נחנך בפסח, אפריל 1995, לאחר כ-16 שנות עבודה ודיונים על התוואי. הרעיון הועלה בראשית שנות השמונים על ידי אברהם תמיר, שהתרשם משביל האפלצ'ים בארצות הברית. את הרעיון העביר תמיר לאורי דביר שתכנן וביצע‏. בתכנונו הושם דגש על מתן ייצוג לכל נופי ואזורי הארץ וכן על מעבר באתרים חשובים לכל הדתות. השביל מהווה מעין שלד לשאר שבילי הטיול בארץ שרבים מהם יוצאים ממנו. בשונה מסימון השבילים הנפוץ בארץ, פס צבעוני בין שני פסים לבנים, מסומן שביל ישראל באמצעות שלושה פסים מקבילים במדורג: לבן, כחול וכתום. הסימון הוא מדורג - כאשר הפס הלבן עליון, כיוון ההליכה צפונה ואילו כאשר הכתום עליון דרומה (יש הסוברים שהלבן מייצג את החרמון המושלג והכתום מייצג את המדבר‏).</p>
+                        <p>שביל ישראל נבחר כאחד מ-20 מסלולי ההליכה הטובים ביותר על ידי נשיונל ג'אוגרפיק, ותואר על ידי צוות השופטים כמשלב טבע, היסטוריה, מורשת ותרבות עם "נופים תנ"כיים בקנה מידה גדול וכן [נופים] מחיי היום-יום של הישראלים המודרניים"‏</p>
+                        <p>בינואר 2016 החלה חברת גוגל להציג גם את שביל ישראל כחלק משירות <a href="http://www.google.com/intl/iw/maps/streetview/#israel-national-trail" target="_blank"> StreetView</a></p>
+                        <a href="https://he.wikipedia.org/wiki/%D7%A9%D7%91%D7%99%D7%9C_%D7%99%D7%A9%D7%A8%D7%90%D7%9C" target="_blank"> מתוך ויקיפדיה</a>
+                    </div>
+                    <div class="col-md-3 hidden-sm hidden-xs">
+                        <img src="assets/img/trail_mark.jpg" class="img-thumbnail" />
+                    </div>
                 </div>
             </div>
-        </div>-->
-
-        <div class="panel panel-default">
+        </div>
+        <div class="panel panel-default" style="direction:ltr" data-bind="visible:shell.lang() == 'en'">
             <div class="panel-heading">
                 <h4 class="panel-title">
                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#i1">
@@ -28,7 +35,7 @@
                     </a>
                 </h4>
             </div>
-            <div id="i1" class="panel-collapse collapse in">
+            <div id="i1" class="panel-collapse collapse">
                 <div class="panel-body">
                     <div class="row">
                         <div class="col-md-3 hidden-sm hidden-xs">
@@ -46,7 +53,7 @@
             </div>
         </div>
 
-        <!--<div class="panel panel-default">
+        <div class="panel panel-default" data-bind="visible:shell.lang() == 'he'">
             <div class="panel-heading">
                 <h4 class="panel-title">
                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#i2">
@@ -57,51 +64,129 @@
             <div id="i2" class="panel-collapse collapse">
                 <div class="panel-body">
                     <p>חובבי רדיו שירצו להפעיל את תחנותיהם ממקטעיו השונים של השביל, רשאים להשתמש באות הקריאה המיוחד 4X4Trail ואחריו לוכסן ומספר המקטע כפי שמופיע באתר זה. כך למשל, מי שיפעיל תחנה מהר תבור שנמצא במקטע מס 8, יוכל להזדהות כ 4X4Trail/8.</p>
-                </div>
-            </div>
-        </div>-->
-
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#i2">
-                        4X4Trail Special Callsign
-                    </a>
-                </h4>
-            </div>
-            <div id="i2" class="panel-collapse collapse">
-                <div class="panel-body">
-                    <p>When you hear the special callsign 4X4Trail on the air, it means the operator is activating from one of the 46 sections of Israel National Trail. 
-                    Usually the operator will give the section number as a suffix e.g. if the activation is from "Mount Tabor", which is in the 8th section of the trail, he will be calling as 4X4Trail/8.</p>
+                    <p>אחרי כל הפעלה, 
+                        <strong>על המפעילים בלבד</strong>
+                     לשלוח את הלוג בפורמט ADIF לגיל, 4Z1KD לכתובת הדוא"ל: gilifon@gmail.com<br />
+                    הלוגים ששולחים המפעילים נכנסים לבסיס נתונים וכך מתאפשר לעוקבים לבדוק את הזכאות שלהם לתעודה.<br />
+                    </p>
                 </div>
             </div>
         </div>
-
-        <div class="panel panel-default">
+        <div class="panel panel-default" style="direction:ltr" data-bind="visible:shell.lang() == 'en'">
             <div class="panel-heading">
                 <h4 class="panel-title">
                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#i3">
-                        Awards
+                        4X4Trail Special Callsign
                     </a>
                 </h4>
             </div>
             <div id="i3" class="panel-collapse collapse">
                 <div class="panel-body">
                     <p>
-                        Radio operators that would work this special callsign, may ask for a nice certificate.<br />
-                        We will issue awards to stations working 10,20,30 and all 46 "Israel National Trail" sections.
+                        When you hear the special callsign 4X4Trail on the air, it means the operator is activating from one of the 46 sections of Israel National Trail.
+                        Usually the operator will give the section number as a suffix e.g. if the activation is from "Mount Tabor", which is in the 8th section of the trail, he will be calling as 4X4Trail/8.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default" data-bind="visible:shell.lang() == 'he'">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#i4">
+                        תעודות
+                    </a>
+                </h4>
+            </div>
+            <div id="i4" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p>חובבי רדיו יהיו זכאים לקבל תעודות במספר קטגוריות:</p>
+                    למפעילים:
+                    <ul>
+                        <li><strong>תעודת הפעלה קבוצתית</strong>: על הפעלה ממקטע בשביל ע"י קבוצה של 5 חובבי רדיו ומעלה</li>
+                        <li>
+                            <strong>תעודת מפעיל מתחיל</strong>: על הפעלה מ 10 מקטעים או יותר
+                        </li>
+                        <li>
+                            <strong>תעודת מפעיל מתמיד</strong>: על הפעלה מ 20 מקטעים או יותר
+                        </li>
+                        <li>
+                            <strong>תעודת מפעיל נחוש</strong>: על הפעלה מ 30 מקטעים או יותר
+                        </li>
+                        <li>
+                            <strong>תעודת מפעיל כל השביל</strong>: על הפעלה מ 46 המקטעים
+                        </li>
+                    </ul>
+                    
+                    לעוקבים:
+                    <ul>
+                        <li>
+                            <strong>תעודת עוקב מתחיל</strong>: על יצירת קשר עם 10 מקטעים או יותר
+                        </li>
+                        <li>
+                            <strong>תעודת עוקב מתמיד</strong>: על יצירת קשר עם 20 מקטעים או יותר
+                        </li>
+                        <li>
+                            <strong>תעודת עוקב נחוש</strong>: על יצירת קשר עם 30 מקטעים או יותר
+                        </li>
+                        <li><strong>תעודת עוקב כל השביל</strong>: על יצירת קשר עם 46 המקטעים</li>
+                    </ul>
+
+                    <p>
+                        הכנס את אות הקריאה שלך כדי לבדוק זכאות לתעודה:
+                    </p>
+                    <p>
+                        <div class="row">
+                            <div class="col-md-4 col-sm-3 col-xs-3">
+
+                            </div>
+                            <div class="col-md-2 col-sm-3 col-xs-3">
+                                <button data-bind="click: GetWokedSections" type="button" class="btn btn-info"><span class="glyphicon glyphicon-certificate"></span> בדוק</button>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                <input class="form-control" data-bind="value: callsign" placeholder="אות קריאה" type="text" tabindex="1" />
+                            </div>
+                        </div>
+                    </p>
+                    <p>
+                        <div id="sectionsPanel" data-bind="foreach: linkList" style="direction:ltr">
+                            <div class="section" data-bind="css: { worked_section: section }, html: section"></div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </p>
+                    <p>
+                        <div data-bind="visible:linkList().length < 10 && linkList().length > 0">עבדת מול <label data-bind="text:linkList().length"></label> מקטעים. עוד <span data-bind="text:10-linkList().length"></span> ותהיה זכאי לתעודה!</div>
+                        <div data-bind="visible:linkList().length >= 10"><span class="glyphicon glyphicon-ok"></span> ברכות, עבדת מול <label data-bind="text:linkList().length"></label> מקטעים ואתה זכאי לתעודה!</div>
+                        <div data-bind="visible:didNotWork"><span class="glyphicon glyphicon-star"></span> עוד לא עבדת אף מקטע, להשתמע!</div>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default" style="direction:ltr" data-bind="visible:shell.lang() == 'en'">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#i5">
+                        Awards
+                    </a>
+                </h4>
+            </div>
+            <div id="i5" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p>
+                        Radio operators that would work this special callsign, may ask for a nice certificate (The activators are responsible for uploading their logs so you won't have to).<br />
+                        We will issue awards to stations working 10, 20, 30 and all 46 "Israel National Trail" sections.
                     </p>
                     <!--<img src="assets/img/trail_view.jpg" width="100%" />-->
                     <p>
-                        Enter your callsign to check your eligibility: 
+                        Enter your callsign to check your eligibility:
                     </p>
                     <p>
                         <div class="row">
                             <div class="col-md-6 col-sm-6 col-xs-6">
-                                <input class="form-control" data-bind="value: callsign" placeholder="Your Callsign" type="text" tabindex="1" />
+                                <input class="form-control" data-bind="value: callsign" placeholder="Your Call" type="text" tabindex="1" />
                             </div>
                             <div class="col-md-2 col-sm-3 col-xs-3">
-                                <button data-bind="click: GetWokedSections" type="button" class="btn btn-info"><span class="glyphicon glyphicon-hdd"></span> Check</button>
+                                <button data-bind="click: GetWokedSections" type="button" class="btn btn-info"><span class="glyphicon glyphicon-certificate"></span> Check</button>
                             </div>
                         </div>
                     </p>
@@ -112,6 +197,7 @@
                         <div class="clearfix"></div>
                     </p>
                     <p>
+                        <div data-bind="visible:linkList().length < 10 && linkList().length > 0">You have worked <label data-bind="text:linkList().length"></label> sections. <span data-bind="text:10-linkList().length"></span> more and your are eligable for an award!</div>
                         <div data-bind="visible:linkList().length >= 10"><span class="glyphicon glyphicon-ok"></span> Congratulations, you have worked <label data-bind="text:linkList().length"></label> sections and your are eligable for an award!</div>
                         <div data-bind="visible:didNotWork"><span class="glyphicon glyphicon-star"></span> You did not work any section yet.. Hope to hear you on the air soon!</div>
                     </p>
@@ -119,46 +205,7 @@
             </div>
         </div>
 
-        <!--<div class="panel panel-default">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#i3">
-                        תעודות
-                    </a>
-                </h4>
-            </div>
-            <div id="i3" class="panel-collapse collapse">
-                <div class="panel-body">
-                    <p>חובבי רדיו יהיו זכאים לקבל תעודות במספר קטגוריות:</p>
-                    <ul>
-                        <li>תעודת הפעלה קבוצתית: על הפעלה ממקטע בשביל ע"י קבוצה של 5 חובבי רדיו ומעלה</li>
-                        <li>
-                            תעודת מפעיל מתחיל: על הפעלה מ 10 מקטעים או יותר
-                        </li>
-                        <li>
-                            תעודת מפעיל מתמיד: על הפעלה מ 20 מקטעים או יותר
-                        </li>
-                        <li>
-                            תעודת מפעיל נחוש: על הפעלה מ 30 מקטעים או יותר
-                        </li>
-                        <li>
-                            תעודת מפעיל כל השביל: על הפעלה מ 46 המקטעים
-                        </li>
-
-                        <li>
-                            תעודת עוקב מתחיל: על יצירת קשר עם 10 מקטעים או יותר
-                        </li>
-                        <li>
-                            תעודת עוקב מתמיד: על יצירת קשר עם 20 מקטעים או יותר
-                        </li>
-                        <li>
-                            תעודת עוקב נחוש: על יצירת קשר עם 30 מקטעים או יותר
-                        </li>
-                        <li>תעודת עוקב כל השביל: על יצירת קשר עם 46 המקטעים</li>
-                    </ul>
-                </div>
-            </div>
-        </div>-->
+        
     </div>
     <!--/row-fluid-->
     <!--<div class="tag-box tag-box-v2">
@@ -168,7 +215,7 @@
         <p>שביל ישראל נבחר כאחד מ-20 מסלולי ההליכה הטובים ביותר על ידי נשיונל ג'אוגרפיק, ותואר על ידי צוות השופטים כמשלב טבע, היסטוריה, מורשת ותרבות עם "נופים תנ"כיים בקנה מידה גדול וכן [נופים] מחיי היום-יום של הישראלים המודרניים"‏</p>
         <a href="https://he.wikipedia.org/wiki/%D7%A9%D7%91%D7%99%D7%9C_%D7%99%D7%A9%D7%A8%D7%90%D7%9C" target="_blank"> מתוך ויקיפדיה</a>
     </div>-->
-    <div class="row" style="margin-top:20px;">
+    <div class="row" style="margin-top:20px;direction:ltr">
         <div class="col-md-3 col-sm-12">
             <div id="map_display">
                 <div style="background-image:url(assets/img/israel_map.jpg); background-size: 260px; background-repeat:no-repeat; height:640px">

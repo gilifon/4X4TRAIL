@@ -1,6 +1,4 @@
-﻿define(function () {
-
-    var shell = require('viewmodels/shell');
+﻿define(['viewmodels/shell'], function (shell) {
 
     //properties
     this.linkList = ko.observableArray();
@@ -37,7 +35,9 @@
             
         },
         linkList: linkList,
-        callsign: callsign
+        callsign: callsign,
+        didNotWork:didNotWork,
+        shell: shell
     };
 
     //Note: This module exports a function. That means that you, the developer, can create multiple instances.

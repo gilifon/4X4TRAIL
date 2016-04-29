@@ -4,12 +4,24 @@
     var selectedSubMenu = ko.observable('');
     var selectedMainMenu = ko.observable('main');
     var version = app.version;
+    var lang = ko.observable('en');
+
+    this.toggleLanguage = function()
+    {
+        if (lang() == 'en') {
+            lang('he');
+        }
+        else if (lang() == 'he') {
+            lang('en');
+        }
+    }
     
     return {
         selectedSubMenu: selectedSubMenu,
         selectedMainMenu: selectedMainMenu,
         version: version,
         router: router,
+        lang:lang,
         activate: function () {
             router.map([
                 { route: 'Dashboard', title: 'Dashboard', moduleId: 'viewmodels/dashboard', nav: true },

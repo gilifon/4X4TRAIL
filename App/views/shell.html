@@ -2,14 +2,15 @@
 <div class="top-v1">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 hidden-sm hidden-xs">
+            <div class="col-md-6 col-sm-6 col-xs-6">
                 <ul class="list-unstyled top-v1-contacts text-left">
                     <li>
-                        <span data-bind="html: 'V' + version" style="color: #f1f1f1"></span>
+                        <div data-bind="visible:lang() == 'en', click: toggleLanguage"><span class="btn flag-icon flag-icon-il"></span> עברית</div>
+                        <div data-bind="visible:lang() == 'he', click: toggleLanguage">English <span class="btn flag-icon flag-icon-gb"></span></div>
                     </li>
                 </ul>
             </div>
-            <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="col-md-6 col-sm-6 col-xs-6">
                 <ul class="list-unstyled top-v1-contacts">
                     <li>
                         חובבי רדיו בשביל ישראל
