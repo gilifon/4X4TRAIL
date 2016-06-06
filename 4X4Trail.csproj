@@ -681,6 +681,7 @@
     <Content Include="assets\flags\flags\4x3\zm.svg" />
     <Content Include="assets\flags\flags\4x3\zw.svg" />
     <Content Include="assets\flags\flags\4x3\zz.svg" />
+    <Content Include="assets\img\cert_example.png" />
     <Content Include="assets\img\english.png" />
     <Content Include="assets\img\israel_map.jpg" />
     <Content Include="assets\img\iarc.png" />
@@ -835,6 +836,10 @@
     <Content Include="assets\plugins\bootstrap3-editable\img\loading.gif" />
     <Content Include="assets\plugins\bootstrap3-editable\js\bootstrap-editable.js" />
     <Content Include="assets\plugins\bootstrap3-editable\js\bootstrap-editable.min.js" />
+    <Content Include="Scripts\ajax_loading.js" />
+    <Content Include="Scripts\Chart.js" />
+    <Content Include="Scripts\Chart.min.js" />
+    <Content Include="Scripts\jwerty.js" />
     <Content Include="Scripts\less-1.4.1.min.js" />
     <Content Include="Scripts\moment-with-langs.js" />
     <Content Include="Scripts\moment-with-langs.min.js" />
@@ -948,7 +953,7 @@
     <Content Include="weyland-config.js" />
     <Content Include="Scripts\jquery-2.0.3.min.map" />
     <Content Include="Server\GetWokedSections.php" />
-    <Content Include="Server\GetLog.php" />
+    <Content Include="Server\GetAllLog.php" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

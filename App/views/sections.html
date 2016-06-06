@@ -117,7 +117,7 @@
                             <strong>תעודת מפעיל כל השביל</strong>: על הפעלה מ 46 המקטעים
                         </li>
                     </ul>
-                    
+
                     לעוקבים:
                     <ul>
                         <li>
@@ -131,7 +131,11 @@
                         </li>
                         <li><strong>תעודת עוקב כל השביל</strong>: על יצירת קשר עם 46 המקטעים</li>
                     </ul>
-
+                    <div class="row">
+                        <div class="col-md-offset-3 col-md-9 hidden-sm hidden-xs">
+                            <img src="assets/img/cert_example.png" />
+                        </div>
+                    </div>
                     <p>
                         הכנס את אות הקריאה שלך כדי לבדוק זכאות לתעודה:
                     </p>
@@ -149,14 +153,14 @@
                         </div>
                     </p>
                     <p>
-                        <div id="sectionsPanel" data-bind="foreach: linkList" style="direction:ltr">
+                        <div id="sectionsPanel" data-bind="foreach: workedSections" style="direction:ltr">
                             <div class="section" data-bind="css: { worked_section: section }, html: section"></div>
                         </div>
                         <div class="clearfix"></div>
                     </p>
                     <p>
-                        <div data-bind="visible:linkList().length < 10 && linkList().length > 0">עבדת מול <label data-bind="text:linkList().length"></label> מקטעים. עוד <span data-bind="text:10-linkList().length"></span> ותהיה זכאי לתעודה!</div>
-                        <div data-bind="visible:linkList().length >= 10"><span class="glyphicon glyphicon-ok"></span> ברכות, עבדת מול <label data-bind="text:linkList().length"></label> מקטעים ואתה זכאי לתעודה!</div>
+                        <div data-bind="visible:workedSections().length < 10 && workedSections().length > 0">עבדת מול <label data-bind="text:workedSections().length"></label> מקטעים. עוד <span data-bind="text:10-workedSections().length"></span> ותהיה זכאי לתעודה!</div>
+                        <div data-bind="visible:workedSections().length >= 10"><span class="glyphicon glyphicon-ok"></span> ברכות, עבדת מול <label data-bind="text:workedSections().length"></label> מקטעים ואתה זכאי לתעודה!</div>
                         <div data-bind="visible:didNotWork"><span class="glyphicon glyphicon-star"></span> עוד לא עבדת אף מקטע, להשתמע!</div>
                     </p>
                 </div>
@@ -177,6 +181,11 @@
                         We will issue awards to stations working 10, 20, 30 and all 46 "Israel National Trail" sections.
                     </p>
                     <!--<img src="assets/img/trail_view.jpg" width="100%" />-->
+                    <div class="row">
+                        <div class="col-md-9 hidden-sm hidden-xs">
+                            <img src="assets/img/cert_example.png" />
+                        </div>
+                    </div>
                     <p>
                         Enter your callsign to check your eligibility:
                     </p>
@@ -191,30 +200,60 @@
                         </div>
                     </p>
                     <p>
-                        <div id="sectionsPanel" data-bind="foreach: linkList">
+                        <div id="sectionsPanel" data-bind="foreach: workedSections">
                             <div class="section" data-bind="css: { worked_section: section }, html: section"></div>
                         </div>
                         <div class="clearfix"></div>
                     </p>
                     <p>
-                        <div data-bind="visible:linkList().length < 10 && linkList().length > 0">You have worked <label data-bind="text:linkList().length"></label> sections. <span data-bind="text:10-linkList().length"></span> more and your are eligable for an award!</div>
-                        <div data-bind="visible:linkList().length >= 10"><span class="glyphicon glyphicon-ok"></span> Congratulations, you have worked <label data-bind="text:linkList().length"></label> sections and your are eligable for an award!</div>
+                        <div data-bind="visible:workedSections().length < 10 && workedSections().length > 0">You have worked <label data-bind="text:workedSections().length"></label> sections. <span data-bind="text:10-workedSections().length"></span> more and your are eligable for an award!</div>
+                        <div data-bind="visible:workedSections().length >= 10"><span class="glyphicon glyphicon-ok"></span> Congratulations, you have worked <label data-bind="text:workedSections().length"></label> sections and your are eligable for an award!</div>
                         <div data-bind="visible:didNotWork"><span class="glyphicon glyphicon-star"></span> You did not work any section yet.. Hope to hear you on the air soon!</div>
                     </p>
                 </div>
             </div>
         </div>
 
-        
+        <div class="panel panel-default" style="direction:ltr;">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#i6">
+                        Statistics
+                    </a>
+                </h4>
+            </div>
+            <div id="i6" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <i id="loadingImage" class="icon-spinner icon-2x icon-spin centered" style="vertical-align:top; margin-top:-5px"></i>
+                        </div>
+                    </div>
+                    <div class="row margin-bottom-20">
+                        <div class="col-md-4">Total QSOs: <label data-bind="text: totalQSO"></label></div>
+                        <div class="col-md-4">Unique Calls: <label data-bind="text: uniqueCall"></label></div>
+                        <div class="col-md-4">Total Sections: <label data-bind="text: totalRefs"></label></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div id="mode_chart"></div>
+                        </div>
+                        <div class="col-md-6">
+                            <div id="band_chart"></div>
+                        </div>
+                    </div>
+                    <p class="margin-bottom-40"></p>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="ref_chart"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!--/row-fluid-->
-    <!--<div class="tag-box tag-box-v2">
-        <p>שביל ישראל הוא נתיב הליכה ארוך שנמשך לאורך כל מדינת ישראל, המתחיל בבית אוסישקין שבקיבוץ דן בצפון ומסתיים בבית ספר שדה אילת, על חוף מפרץ אילת. אורכו היום, לאחר השינויים שבוצעו בו במהלך השנים, הוא כ-1,040 קילומטרים. שביל ישראל הוא גולת הכותרת ברשת סימון השבילים הארצית שיזמה ויצרה החברה להגנת הטבע, המסמנת וממפה את כל מסלולי הטיול בארץ, על ידי הוועדה לשבילי ישראל.</p>
-        <p>(השביל נחנך בפסח, אפריל 1995, לאחר כ-16 שנות עבודה ודיונים על התוואי. הרעיון הועלה בראשית שנות השמונים על ידי אברהם תמיר, שהתרשם משביל האפלצ'ים בארצות הברית. את הרעיון העביר תמיר לאורי דביר שתכנן וביצע‏. בתכנונו הושם דגש על מתן ייצוג לכל נופי ואזורי הארץ וכן על מעבר באתרים חשובים לכל הדתות. השביל מהווה מעין שלד לשאר שבילי הטיול בארץ שרבים מהם יוצאים ממנו. בשונה מסימון השבילים הנפוץ בארץ, פס צבעוני בין שני פסים לבנים, מסומן שביל ישראל באמצעות שלושה פסים מקבילים במדורג: לבן, כחול וכתום. הסימון הוא מדורג - כאשר הפס הלבן עליון, כיוון ההליכה צפונה ואילו כאשר הכתום עליון דרומה (יש הסוברים שהלבן מייצג את החרמון המושלג והכתום מייצג את המדבר‏</p>
-        <p>לכל אורכו, שביל ישראל נמצא בתחומי הקו הירוק. בשנת 2003 הוסט חלק מתוואי השביל באזור השרון משפלת ההר לכיוון הים. הסיבות העיקריות להסטה זו הן התפתחות כביש חוצה ישראל (כביש מספר 6) שדרס קטעים מהשביל, הימנעות מסיכון ההולכים לאורך קו התפר והרצון להוסיף נופי ערים וחוף ים. שינויים מהותיים נוספים נעשו בשביל באזור הנגב, משום שהתוואי הקודם כלל קטעים ארוכים לאורך כביש 40 לשם הימנעות מכניסה לשטחי האש הרבים משני עבריו.</p>
-        <p>שביל ישראל נבחר כאחד מ-20 מסלולי ההליכה הטובים ביותר על ידי נשיונל ג'אוגרפיק, ותואר על ידי צוות השופטים כמשלב טבע, היסטוריה, מורשת ותרבות עם "נופים תנ"כיים בקנה מידה גדול וכן [נופים] מחיי היום-יום של הישראלים המודרניים"‏</p>
-        <a href="https://he.wikipedia.org/wiki/%D7%A9%D7%91%D7%99%D7%9C_%D7%99%D7%A9%D7%A8%D7%90%D7%9C" target="_blank"> מתוך ויקיפדיה</a>
-    </div>-->
+   
     <div class="row" style="margin-top:20px;direction:ltr">
         <div class="col-md-3 col-sm-12">
             <div id="map_display">
