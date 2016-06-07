@@ -957,6 +957,7 @@
     <Content Include="Server\GetWokedSections.php" />
     <Content Include="Server\GetAllLog.php" />
     <Content Include="Server\GetAudit.php" />
+    <Content Include="Server\AddLog.php" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
