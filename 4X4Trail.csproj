@@ -147,6 +147,8 @@
     <Content Include="App\services\httpService.js" />
     <Content Include="App\services\themeManager.js" />
     <Content Include="App\services\utilities.js" />
+    <Content Include="App\views\kdaudit.html" />
+    <Content Include="App\viewmodels\kdaudit.js" />
     <Content Include="App\viewmodels\sections.js" />
     <Content Include="App\viewmodels\shell.js" />
     <Content Include="App\viewmodels\dashboard.js" />
@@ -954,6 +956,7 @@
     <Content Include="Scripts\jquery-2.0.3.min.map" />
     <Content Include="Server\GetWokedSections.php" />
     <Content Include="Server\GetAllLog.php" />
+    <Content Include="Server\GetAudit.php" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
