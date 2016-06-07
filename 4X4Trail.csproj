@@ -147,8 +147,8 @@
     <Content Include="App\services\httpService.js" />
     <Content Include="App\services\themeManager.js" />
     <Content Include="App\services\utilities.js" />
-    <Content Include="App\views\kdaudit.html" />
-    <Content Include="App\viewmodels\kdaudit.js" />
+    <Content Include="App\views\audit.html" />
+    <Content Include="App\viewmodels\audit.js" />
     <Content Include="App\viewmodels\sections.js" />
     <Content Include="App\viewmodels\shell.js" />
     <Content Include="App\viewmodels\dashboard.js" />
