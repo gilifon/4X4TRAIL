@@ -24,7 +24,7 @@
         lang:lang,
         activate: function () {
             router.map([
-                { route: 'Dashboard', title: 'Dashboard', moduleId: 'viewmodels/dashboard', nav: true },
+                { route: 'Statistics', title: 'Statistics', moduleId: 'viewmodels/kdstatistics', nav: true },
                 { route: 'Audit', title: 'Audit', moduleId: 'viewmodels/audit', nav: true },
                 { route: '', title: 'Sections', moduleId: 'viewmodels/sections', nav: true }
             ]).buildNavigationModel();

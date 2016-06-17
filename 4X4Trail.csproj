@@ -147,12 +147,12 @@
     <Content Include="App\services\httpService.js" />
     <Content Include="App\services\themeManager.js" />
     <Content Include="App\services\utilities.js" />
+    <Content Include="App\viewmodels\kdstatistics.js" />
     <Content Include="App\views\audit.html" />
     <Content Include="App\viewmodels\audit.js" />
     <Content Include="App\viewmodels\sections.js" />
     <Content Include="App\viewmodels\shell.js" />
-    <Content Include="App\viewmodels\dashboard.js" />
-    <Content Include="App\views\dashboard.html" />
+    <Content Include="App\views\kdstatistics.html" />
     <Content Include="App\views\sections.html" />
     <Content Include="App\views\shell.html" />
     <Content Include="assets\css\app.css" />

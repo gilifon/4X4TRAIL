@@ -147,9 +147,7 @@
     
     var vm = {
         activate: function () {
-            //shell.selectedSubMenu('ham');
-            shell.selectedMainMenu('sections');
-
+            
             // Load charts package
             google.charts.load('current', { 'packages': ['corechart', 'bar'] });
             // Set a callback to run when the Google Visualization API is loaded.

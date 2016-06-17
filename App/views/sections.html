@@ -1,7 +1,7 @@
 ﻿<div class="container" >
     
     <h3 data-bind="visible:shell.lang() == 'he'">4X4Trail - חובבי רדיו בשביל ישראל</h3>
-    <h3 style="direction:ltr" data-bind="visible:shell.lang() == 'en'">Amature Radio On Israel National Trail - 4X4Trail</h3>
+    <h3 style="direction:ltr" data-bind="visible:shell.lang() == 'en'">Amateur Radio On Israel National Trail - 4X4Trail</h3>
 
     <div class="panel-group acc-v1 margin-bottom-40" id="accordion">
         <div class="panel panel-default" data-bind="visible:shell.lang() == 'he'">
@@ -210,44 +210,6 @@
                         <div data-bind="visible:workedSections().length >= 10"><span class="glyphicon glyphicon-ok"></span> Congratulations, you have worked <label data-bind="text:workedSections().length"></label> sections and your are eligable for an award!</div>
                         <div data-bind="visible:didNotWork"><span class="glyphicon glyphicon-star"></span> You did not work any section yet.. Hope to hear you on the air soon!</div>
                     </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="panel panel-default" style="direction:ltr;">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#i6">
-                        Statistics
-                    </a>
-                </h4>
-            </div>
-            <div id="i6" class="panel-collapse collapse">
-                <div class="panel-body">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <i id="loadingImage" class="icon-spinner icon-2x icon-spin centered" style="vertical-align:top; margin-top:-5px"></i>
-                        </div>
-                    </div>
-                    <div class="row margin-bottom-20">
-                        <div class="col-md-4">Total QSOs: <label data-bind="text: totalQSO"></label></div>
-                        <div class="col-md-4">Unique Calls: <label data-bind="text: uniqueCall"></label></div>
-                        <div class="col-md-4">Total Sections: <label data-bind="text: totalRefs"></label></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div id="mode_chart"></div>
-                        </div>
-                        <div class="col-md-6">
-                            <div id="band_chart"></div>
-                        </div>
-                    </div>
-                    <p class="margin-bottom-40"></p>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div id="ref_chart"></div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

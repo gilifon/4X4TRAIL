@@ -1,4 +1,4 @@
-﻿define(['viewmodels/shell'], function (shell) {
+﻿define(function () {
 
     //properties
     this.linkList = ko.observableArray();
@@ -19,8 +19,7 @@
         compositionComplete: function () {
             
         },
-        linkList: linkList,
-        shell: shell
+        linkList: linkList
     };
 
     return vm;

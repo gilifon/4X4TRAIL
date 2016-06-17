@@ -17,7 +17,7 @@ define(['durandal/system', 'durandal/app', 'durandal/viewLocator'],  function (s
     //>>excludeEnd("build");
 
     app.title = '4X4Trail';
-    app.version = "1.0";
+    app.version = "1.1";
 
     app.configurePlugins({
         router: true,
